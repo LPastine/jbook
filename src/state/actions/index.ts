@@ -4,7 +4,7 @@ export interface MoveCellAction {
   type: ActionType.MOVE_CELL;
   payload: {
     id: string;
-    direction: 'up' | 'down';
+    direction: Direction;
   };
 }
 

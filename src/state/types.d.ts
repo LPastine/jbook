@@ -5,3 +5,5 @@ interface Cell {
 }
 
 type CellTypes = 'code' | 'text';
+
+type Direction = 'up' | 'down';
