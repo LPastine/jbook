@@ -21,7 +21,16 @@ const reducer = (
   state: CellsState = initialState,
   action: Action
 ): CellsState => {
-  return state;
+  switch (action.type) {
+    case ActionType.MOVE_CELL:
+      return state;
+    case ActionType.DELETE_CELL:
+      return state;
+    case ActionType.INSERT_CELL_BEFORE:
+      return state;
+    case ActionType.UPDATE_CELL:
+      return state;
+  }
 };
 
 export default reducer;
