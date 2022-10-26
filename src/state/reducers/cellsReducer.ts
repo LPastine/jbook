@@ -25,9 +25,7 @@ const reducer = produce(
       case ActionType.MOVE_CELL:
         const { direction } = action.payload;
 
-        const index = state.order.findIndex((id) => {
-          id === action.payload.id;
-        });
+        const index = state.order.findIndex((id) => id === action.payload.id);
 
         const targetIndex = direction === 'up' ? index - 1 : index + 2;
 
