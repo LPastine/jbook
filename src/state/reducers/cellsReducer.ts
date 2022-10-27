@@ -63,6 +63,8 @@ const reducer = produce(
         const { id, content } = action.payload;
         state.data[id].content = content;
         return state;
+      default:
+        return state;
     }
   },
   initialState
